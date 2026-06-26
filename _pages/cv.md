@@ -22,10 +22,10 @@ Education
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2024-Present: Researcher
+  * Oak Ridge National Laboratory, Oak Ridge, USA
+  * Research on distributed machine learning, resilient AI, and workflow systems for large-scale scientific computing
+  * Supervisor: ORNL Staff Scientist
 
 * Summer 2022: Applied Scientist Intern
   * Amazon Web Services (AWS), Herndon, USA

@@ -1,49 +1,286 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+<div class="lp-wrapper">
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+<!-- ═══════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section class="lp-hero">
+  <div class="lp-hero__role">
+    <span class="lp-hero__role-dot"></span>
+    Ph.D. Researcher, Vanderbilt University &amp; Oak Ridge National Laboratory
+  </div>
+  <h1 class="lp-hero__name">Chandreyee Bhowmick</h1>
+  <p class="lp-hero__tagline">Distributed Learning &nbsp;·&nbsp; Resilient AI &nbsp;·&nbsp; Multi-Agent Systems</p>
+  <p class="lp-hero__intro">
+    I design <strong>resilient machine learning algorithms</strong> for distributed and federated settings,
+    where adversarial agents may corrupt model updates or system behavior. My work spans
+    <strong>federated learning</strong>, <strong>multi-agent reinforcement learning</strong>, and
+    <strong>cyber-physical systems security</strong> — building provably robust aggregation methods
+    that maintain accuracy even under Byzantine attacks and model poisoning.
+  </p>
+  <div class="lp-hero__ctas">
+    <a href="/publications/" class="lp-btn lp-btn--primary">
+      <i class="fas fa-book-open"></i> Publications
+    </a>
+    <a href="/cv/" class="lp-btn lp-btn--outline">
+      <i class="fas fa-file-alt"></i> Curriculum Vitae
+    </a>
+    <a href="mailto:chandreyee.bhowmick@vanderbilt.edu" class="lp-btn lp-btn--outline">
+      <i class="fas fa-envelope"></i> Get in Touch
+    </a>
+  </div>
+</section>
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+<!-- ═══════════════════════════════════════════
+     STATS
+════════════════════════════════════════════ -->
+<div class="lp-stats-grid">
+  <div class="lp-stat-card">
+    <div class="lp-stat-card__number" data-count="19" data-suffix="">19</div>
+    <div class="lp-stat-card__label">Publications</div>
+  </div>
+  <div class="lp-stat-card">
+    <div class="lp-stat-card__number" data-count="234" data-suffix="">234</div>
+    <div class="lp-stat-card__label">Citations</div>
+  </div>
+  <div class="lp-stat-card">
+    <div class="lp-stat-card__number" data-count="5" data-suffix="">5</div>
+    <div class="lp-stat-card__label">h-index</div>
+  </div>
+  <div class="lp-stat-card">
+    <div class="lp-stat-card__number" data-count="10" data-suffix="+">10+</div>
+    <div class="lp-stat-card__label">Years Research</div>
+  </div>
+</div>
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+<hr class="lp-divider">
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+<!-- ═══════════════════════════════════════════
+     RESEARCH AREAS
+════════════════════════════════════════════ -->
+<span class="lp-section-label">Focus Areas</span>
+<h2 class="lp-section-title">Research</h2>
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+<div class="lp-research-grid">
 
-**Markdown generator**
+  <div class="lp-research-card">
+    <div class="lp-research-card__icon"><i class="fas fa-network-wired"></i></div>
+    <div class="lp-research-card__title">Resilient Federated &amp; Distributed Learning</div>
+    <p class="lp-research-card__desc">
+      Designing aggregation mechanisms — trimmed means, clipping, soft-medoid, adaptive
+      aggregation — that remain accurate under Byzantine faults and model poisoning attacks
+      in both federated and peer-to-peer distributed learning settings.
+    </p>
+  </div>
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+  <div class="lp-research-card">
+    <div class="lp-research-card__icon"><i class="fas fa-robot"></i></div>
+    <div class="lp-research-card__title">Multi-Agent Reinforcement Learning</div>
+    <p class="lp-research-card__desc">
+      Building resilient distributed actor-critic algorithms and flocking/formation
+      controllers for multi-agent systems, with provable convergence guarantees even
+      when a fraction of agents behave adversarially.
+    </p>
+  </div>
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+  <div class="lp-research-card">
+    <div class="lp-research-card__icon"><i class="fas fa-shield-alt"></i></div>
+    <div class="lp-research-card__title">Cyber-Physical Systems Security</div>
+    <p class="lp-research-card__desc">
+      Developing learning-based attack detection and mitigation for networked control
+      systems, including neural network estimators and χ² detectors for sensor and
+      actuator attacks in stochastic linear and nonlinear systems.
+    </p>
+  </div>
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+</div>
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+<hr class="lp-divider">
+
+<!-- ═══════════════════════════════════════════
+     NEWS / TIMELINE
+════════════════════════════════════════════ -->
+<span class="lp-section-label">Latest Updates</span>
+<h2 class="lp-section-title">News &amp; Milestones</h2>
+
+<ul class="lp-news-timeline">
+  <li class="lp-news-item">
+    <span class="lp-news-item__date">2025</span>
+    <span class="lp-news-item__dot"></span>
+    <span class="lp-news-item__text">
+      <strong>New paper</strong> — "Decentralized Learning using Hashgraph Consensus" at
+      <em>IEEE 49th Annual Computers, Software, and Applications Conference (COMPSAC) 2025</em>.
+    </span>
+  </li>
+  <li class="lp-news-item">
+    <span class="lp-news-item__date">2025</span>
+    <span class="lp-news-item__dot"></span>
+    <span class="lp-news-item__text">
+      <strong>Papers under review</strong> — "Improving Resilient Aggregation Against Model Poisoning Attacks
+      Using Efficient Trimming" (IEEE TISPN) and "Adaptive Aggregation Based Resilient Learning for
+      Distributed Actor-Critic Algorithms" (JAAMAS, Springer).
+    </span>
+  </li>
+  <li class="lp-news-item">
+    <span class="lp-news-item__date">2024</span>
+    <span class="lp-news-item__dot"></span>
+    <span class="lp-news-item__text">
+      <strong>🏆 Best Paper Award</strong> at <em>IEEE International Conference on Distributed Computing
+      and Artificial Intelligence (DCAI) 2024</em> for "Resilient Peer-to-Peer Learning based on
+      Adaptive Aggregation."
+    </span>
+  </li>
+  <li class="lp-news-item">
+    <span class="lp-news-item__date">2024</span>
+    <span class="lp-news-item__dot"></span>
+    <span class="lp-news-item__text">
+      <strong>Student Travel Award</strong> to attend <em>IEEE TPS-ISA 2024</em>. Presented
+      "Resilient Federated Learning Using Trimmed-Clipping Aggregation."
+    </span>
+  </li>
+  <li class="lp-news-item">
+    <span class="lp-news-item__date">2024</span>
+    <span class="lp-news-item__dot"></span>
+    <span class="lp-news-item__text">
+      <strong>Joined Oak Ridge National Laboratory</strong> as a researcher, working on
+      distributed learning and resilient AI for large-scale scientific computing.
+    </span>
+  </li>
+  <li class="lp-news-item">
+    <span class="lp-news-item__date">2023</span>
+    <span class="lp-news-item__dot"></span>
+    <span class="lp-news-item__text">
+      <strong>New publication</strong> — "Adaptive Learning from Peers for Distributed Actor-Critic
+      Algorithms" at <em>International Symposium on Distributed Computing and Artificial Intelligence
+      (DCAI) 2023</em>.
+    </span>
+  </li>
+  <li class="lp-news-item">
+    <span class="lp-news-item__date">2022</span>
+    <span class="lp-news-item__dot"></span>
+    <span class="lp-news-item__text">
+      <strong>Applied Scientist Intern</strong> at <strong>Amazon Web Services (AWS)</strong>, Herndon, VA —
+      developed reinforcement learning algorithms for battery scheduling and supply chain management.
+    </span>
+  </li>
+  <li class="lp-news-item">
+    <span class="lp-news-item__date">2021</span>
+    <span class="lp-news-item__dot"></span>
+    <span class="lp-news-item__text">
+      <strong>Joined Vanderbilt University</strong> as a Ph.D. student in Electrical and Computer
+      Engineering under <strong>Dr. Xenofon Koutsoukos</strong>.
+    </span>
+  </li>
+</ul>
+
+<hr class="lp-divider">
+
+<!-- ═══════════════════════════════════════════
+     PRESENTATION VIDEO
+════════════════════════════════════════════ -->
+<span class="lp-section-label">Research Presentation</span>
+<h2 class="lp-section-title">Featured Talk</h2>
+
+<div class="youtube-video" style="max-width: 560px; margin: auto;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Fqi3OPoQaj8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<hr class="lp-divider">
+
+<!-- ═══════════════════════════════════════════
+     TECH STACK
+════════════════════════════════════════════ -->
+<span class="lp-section-label">Tools &amp; Technologies</span>
+<h2 class="lp-section-title">Tech Stack</h2>
+
+<div class="lp-tech-grid">
+  <span class="lp-tech-badge"><img class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="">Python</span>
+  <span class="lp-tech-badge"><img class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg" alt="">MATLAB</span>
+  <span class="lp-tech-badge"><img class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg" alt="">LaTeX</span>
+  <span class="lp-tech-badge"><img class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" alt="">PyTorch</span>
+  <span class="lp-tech-badge"><img class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="">TensorFlow</span>
+  <span class="lp-tech-badge"><span class="tech-dot" style="background:#1976d2"></span>Federated Learning</span>
+  <span class="lp-tech-badge"><span class="tech-dot" style="background:#1565c0"></span>Multi-Agent RL</span>
+  <span class="lp-tech-badge"><span class="tech-dot" style="background:#008080"></span>Graph Neural Networks</span>
+  <span class="lp-tech-badge"><img class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" alt="">NumPy / Matplotlib</span>
+  <span class="lp-tech-badge"><span class="tech-dot" style="background:#4527a0"></span>Byzantine Fault Tolerance</span>
+  <span class="lp-tech-badge"><span class="tech-dot" style="background:#c0392b"></span>Cyber-Physical Security</span>
+  <span class="lp-tech-badge"><img class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="">Git</span>
+  <span class="lp-tech-badge"><img class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="">Linux</span>
+</div>
+
+<hr class="lp-divider">
+
+<!-- ═══════════════════════════════════════════
+     COLLABORATIONS
+════════════════════════════════════════════ -->
+<span class="lp-section-label">Affiliations &amp; Partners</span>
+<h2 class="lp-section-title">Collaborations</h2>
+
+<div class="lp-collab-strip">
+  <span class="lp-collab-badge"><i class="fas fa-university"></i> Vanderbilt University</span>
+  <span class="lp-collab-badge"><i class="fas fa-atom"></i> Oak Ridge National Laboratory</span>
+  <span class="lp-collab-badge"><i class="fas fa-cloud"></i> Amazon Web Services</span>
+  <span class="lp-collab-badge"><i class="fas fa-graduation-cap"></i> IIT Kanpur</span>
+  <span class="lp-collab-badge"><i class="fas fa-flask"></i> Missouri S&amp;T</span>
+  <span class="lp-collab-badge"><i class="fas fa-shield-alt"></i> Resilient AI Research</span>
+</div>
+
+<hr class="lp-divider">
+
+<!-- ═══════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════ -->
+<span class="lp-section-label">Let's Connect</span>
+<h2 class="lp-section-title">Contact</h2>
+
+<p style="color:#475569; margin-bottom:1.1rem; text-align:left !important;">
+  I welcome discussions on research collaborations in distributed learning, resilient AI,
+  and federated systems. The best way to reach me is by email.
+</p>
+
+<div class="lp-hero__ctas">
+  <a href="mailto:chandreyee.bhowmick@vanderbilt.edu" class="lp-btn lp-btn--primary">
+    <i class="fas fa-envelope"></i> chandreyee.bhowmick@vanderbilt.edu
+  </a>
+  <a href="https://scholar.google.com/citations?user=QUmmn7kAAAAJ&hl=en" class="lp-btn lp-btn--outline">
+    <i class="ai ai-google-scholar"></i> Google Scholar
+  </a>
+  <a href="https://orcid.org/0000-0002-2261-8288" class="lp-btn lp-btn--outline">
+    <i class="ai ai-orcid"></i> ORCID
+  </a>
+  <a href="https://github.com/cbhowmic" class="lp-btn lp-btn--outline">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+</div>
+
+</div><!-- /.lp-wrapper -->
+
+<script>
+(function() {
+  function animateCounter(el) {
+    var target  = parseInt(el.getAttribute('data-count'), 10);
+    var suffix  = el.getAttribute('data-suffix') || '';
+    var step    = Math.max(1, Math.ceil(target / 28));
+    var current = 0;
+    el.textContent = '0';
+    var timer   = setInterval(function() {
+      current = Math.min(current + step, target);
+      el.textContent = current + (current >= target ? suffix : '');
+      if (current >= target) clearInterval(timer);
+    }, 38);
+  }
+  setTimeout(function() {
+    var counters = document.querySelectorAll('.lp-stat-card__number[data-count]');
+    counters.forEach(function(c) { animateCounter(c); });
+  }, 300);
+})();
+</script>
