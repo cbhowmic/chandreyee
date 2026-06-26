@@ -412,18 +412,6 @@ redirect_from:
 <hr class="lp-divider">
 
 <!-- ═══════════════════════════════════════════
-     PRESENTATION VIDEO
-════════════════════════════════════════════ -->
-<span class="lp-section-label">Research Presentation</span>
-<h2 class="lp-section-title">Featured Talk</h2>
-
-<div class="youtube-video" style="max-width: 560px; margin: auto;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Fqi3OPoQaj8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<hr class="lp-divider">
-
-<!-- ═══════════════════════════════════════════
      TECH STACK
 ════════════════════════════════════════════ -->
 <span class="lp-section-label">Tools &amp; Technologies</span>
