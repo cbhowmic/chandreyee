@@ -106,6 +106,234 @@ redirect_from:
 <hr class="lp-divider">
 
 <!-- ═══════════════════════════════════════════
+     FEATURED RESEARCH (SVG animations)
+════════════════════════════════════════════ -->
+<span class="lp-section-label">Highlighted Work</span>
+<h2 class="lp-section-title">Featured Research</h2>
+
+<div class="lp-projects-grid" style="grid-template-columns: repeat(2, 1fr);">
+
+  <!-- ── Project 1: Federated Learning ── -->
+  <div class="lp-project-card">
+    <svg class="lp-project-card__visual" viewBox="0 0 280 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="fl-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#071526"/>
+          <stop offset="100%" stop-color="#0d3358"/>
+        </linearGradient>
+        <filter id="fl-glow">
+          <feGaussianBlur stdDeviation="2.2" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="fl-red-glow">
+          <feGaussianBlur stdDeviation="2.8" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <rect width="280" height="140" fill="url(#fl-bg)"/>
+
+      <!-- Good client → server lines -->
+      <line x1="38" y1="28"  x2="130" y2="68" stroke="rgba(66,165,245,0.35)" stroke-width="1.2" stroke-dasharray="4,3"><animate attributeName="opacity" values="0.35;0.75;0.35" dur="2.1s" repeatCount="indefinite"/></line>
+      <line x1="15" y1="72"  x2="130" y2="72" stroke="rgba(66,165,245,0.35)" stroke-width="1.2" stroke-dasharray="4,3"><animate attributeName="opacity" values="0.35;0.75;0.35" dur="2.6s" repeatCount="indefinite"/></line>
+      <line x1="38" y1="112" x2="130" y2="76" stroke="rgba(66,165,245,0.35)" stroke-width="1.2" stroke-dasharray="4,3"><animate attributeName="opacity" values="0.35;0.75;0.35" dur="1.9s" repeatCount="indefinite"/></line>
+      <line x1="210" y1="112" x2="150" y2="76" stroke="rgba(66,165,245,0.35)" stroke-width="1.2" stroke-dasharray="4,3"><animate attributeName="opacity" values="0.35;0.75;0.35" dur="2.3s" repeatCount="indefinite"/></line>
+
+      <!-- Byzantine → server lines (partial, blocked) -->
+      <line x1="230" y1="28" x2="185" y2="52" stroke="rgba(239,83,80,0.45)" stroke-width="1.2" stroke-dasharray="3,3"/>
+      <line x1="258" y1="72" x2="197" y2="72" stroke="rgba(239,83,80,0.45)" stroke-width="1.2" stroke-dasharray="3,3"/>
+
+      <!-- Animated good gradient packets -->
+      <circle r="3.2" fill="#42a5f5" opacity="0" filter="url(#fl-glow)">
+        <animateMotion dur="1.9s" repeatCount="indefinite" begin="0s"   path="M38,28  L130,68"/>
+        <animate attributeName="opacity" values="0;1;0" dur="1.9s" repeatCount="indefinite" begin="0s"/>
+      </circle>
+      <circle r="3.2" fill="#42a5f5" opacity="0" filter="url(#fl-glow)">
+        <animateMotion dur="2.2s" repeatCount="indefinite" begin="0.7s" path="M15,72  L130,72"/>
+        <animate attributeName="opacity" values="0;1;0" dur="2.2s" repeatCount="indefinite" begin="0.7s"/>
+      </circle>
+      <circle r="3.2" fill="#42a5f5" opacity="0" filter="url(#fl-glow)">
+        <animateMotion dur="2.0s" repeatCount="indefinite" begin="1.3s" path="M38,112 L130,76"/>
+        <animate attributeName="opacity" values="0;1;0" dur="2.0s" repeatCount="indefinite" begin="1.3s"/>
+      </circle>
+      <circle r="3.2" fill="#42a5f5" opacity="0" filter="url(#fl-glow)">
+        <animateMotion dur="1.8s" repeatCount="indefinite" begin="0.4s" path="M210,112 L150,76"/>
+        <animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite" begin="0.4s"/>
+      </circle>
+
+      <!-- Animated bad packets (stop mid-way) -->
+      <circle r="3.2" fill="#ef5350" opacity="0" filter="url(#fl-red-glow)">
+        <animateMotion dur="1.4s" repeatCount="indefinite" begin="0.5s" path="M230,28 L185,52"/>
+        <animate attributeName="opacity" values="0;0.9;0" dur="1.4s" repeatCount="indefinite" begin="0.5s"/>
+      </circle>
+      <circle r="3.2" fill="#ef5350" opacity="0" filter="url(#fl-red-glow)">
+        <animateMotion dur="1.3s" repeatCount="indefinite" begin="1.5s" path="M258,72 L197,72"/>
+        <animate attributeName="opacity" values="0;0.9;0" dur="1.3s" repeatCount="indefinite" begin="1.5s"/>
+      </circle>
+
+      <!-- Block markers -->
+      <text x="181" y="51" fill="#ef9a9a" font-size="9" font-weight="bold" font-family="sans-serif">✕</text>
+      <text x="193" y="75" fill="#ef9a9a" font-size="9" font-weight="bold" font-family="sans-serif">✕</text>
+
+      <!-- Good client nodes -->
+      <circle cx="38"  cy="28"  r="10" fill="rgba(66,165,245,0.14)" stroke="#42a5f5" stroke-width="1.4"/>
+      <circle cx="38"  cy="28"  r="5"  fill="#42a5f5"/>
+      <circle cx="15"  cy="72"  r="10" fill="rgba(66,165,245,0.14)" stroke="#42a5f5" stroke-width="1.4"/>
+      <circle cx="15"  cy="72"  r="5"  fill="#42a5f5"/>
+      <circle cx="38"  cy="112" r="10" fill="rgba(66,165,245,0.14)" stroke="#42a5f5" stroke-width="1.4"/>
+      <circle cx="38"  cy="112" r="5"  fill="#42a5f5"/>
+      <circle cx="210" cy="112" r="10" fill="rgba(66,165,245,0.14)" stroke="#42a5f5" stroke-width="1.4"/>
+      <circle cx="210" cy="112" r="5"  fill="#42a5f5"/>
+
+      <!-- Byzantine client nodes -->
+      <circle cx="230" cy="28" r="12" fill="rgba(239,83,80,0.15)" stroke="#ef5350" stroke-width="1.5"><animate attributeName="r" values="12;14;12" dur="1.4s" repeatCount="indefinite"/></circle>
+      <circle cx="230" cy="28" r="5.5" fill="#ef5350" filter="url(#fl-red-glow)"/>
+      <circle cx="258" cy="72" r="12" fill="rgba(239,83,80,0.15)" stroke="#ef5350" stroke-width="1.5"><animate attributeName="r" values="12;14;12" dur="1.7s" repeatCount="indefinite"/></circle>
+      <circle cx="258" cy="72" r="5.5" fill="#ef5350" filter="url(#fl-red-glow)"/>
+
+      <!-- Central FL Server -->
+      <circle cx="140" cy="72" r="26" fill="rgba(25,118,210,0.08)" stroke="none"><animate attributeName="r" values="26;32;26" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.6;0.1;0.6" dur="2.4s" repeatCount="indefinite"/></circle>
+      <circle cx="140" cy="72" r="20" fill="rgba(25,118,210,0.28)" stroke="#42a5f5" stroke-width="2" filter="url(#fl-glow)"/>
+      <!-- Shield icon -->
+      <path d="M140,60 L150,65 L150,74 Q150,82 140,85 Q130,82 130,74 L130,65 Z" fill="#1565c0" opacity="0.95"/>
+      <path d="M136,73 L139,77 L145,68" stroke="#69f0ae" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- Labels -->
+      <text x="18"  y="22"  fill="rgba(255,255,255,0.45)" font-size="6.2" font-family="sans-serif">benign</text>
+      <text x="216" y="22"  fill="#ef9a9a" font-size="6.2" font-family="sans-serif">Byzantine</text>
+      <text x="122" y="100" fill="#90caf9" font-size="6.8" font-weight="bold" font-family="sans-serif">FL Server</text>
+      <text x="14"  y="136" fill="rgba(255,255,255,0.55)" font-size="8.5" font-family="sans-serif">Trimmed-Clipping Federated Aggregation</text>
+    </svg>
+    <div class="lp-project-card__body">
+      <span class="lp-project-card__tag">Federated Learning · Byzantine Resilience</span>
+      <div class="lp-project-card__title">Resilient Federated Learning via Trimmed-Clipping</div>
+      <p class="lp-project-card__desc">
+        Novel aggregation rule that combines gradient trimming with norm clipping at the
+        FL server, provably filtering Byzantine and model poisoning attacks while
+        preserving accuracy on benign data. Presented at IEEE TPS-ISA 2024.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── Project 2: Resilient P2P Learning ── -->
+  <div class="lp-project-card">
+    <svg class="lp-project-card__visual" viewBox="0 0 280 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="p2p-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#07091a"/>
+          <stop offset="100%" stop-color="#0e1740"/>
+        </linearGradient>
+        <filter id="p2p-blue-glow">
+          <feGaussianBlur stdDeviation="2.5" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="p2p-red-glow">
+          <feGaussianBlur stdDeviation="3" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="p2p-green-glow">
+          <feGaussianBlur stdDeviation="2" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <rect width="280" height="140" fill="url(#p2p-bg)"/>
+
+      <!-- Mesh edges — pentagon outer ring + 2 diagonals -->
+      <!-- Nodes: A(50,30) B(200,28) C(255,88) D(160,125) E(70,118) + center F(140,72) -->
+      <!-- Outer ring edges -->
+      <line x1="50"  y1="30"  x2="200" y2="28"  stroke="rgba(66,165,245,0.3)" stroke-width="1.1"><animate attributeName="opacity" values="0.3;0.65;0.3" dur="3.0s" repeatCount="indefinite"/></line>
+      <line x1="200" y1="28"  x2="255" y2="88"  stroke="rgba(239,83,80,0.3)"  stroke-width="1.1"><animate attributeName="opacity" values="0.3;0.65;0.3" dur="2.5s" repeatCount="indefinite"/></line>
+      <line x1="255" y1="88"  x2="160" y2="125" stroke="rgba(66,165,245,0.3)" stroke-width="1.1"><animate attributeName="opacity" values="0.3;0.65;0.3" dur="2.8s" repeatCount="indefinite"/></line>
+      <line x1="160" y1="125" x2="70"  y2="118" stroke="rgba(66,165,245,0.3)" stroke-width="1.1"><animate attributeName="opacity" values="0.3;0.65;0.3" dur="2.2s" repeatCount="indefinite"/></line>
+      <line x1="70"  y1="118" x2="50"  y2="30"  stroke="rgba(239,83,80,0.3)"  stroke-width="1.1"><animate attributeName="opacity" values="0.3;0.65;0.3" dur="3.2s" repeatCount="indefinite"/></line>
+      <!-- Diagonal edges through center node -->
+      <line x1="50"  y1="30"  x2="140" y2="72"  stroke="rgba(66,165,245,0.25)" stroke-width="1.0"><animate attributeName="opacity" values="0.25;0.55;0.25" dur="2.0s" repeatCount="indefinite"/></line>
+      <line x1="200" y1="28"  x2="140" y2="72"  stroke="rgba(239,83,80,0.25)"  stroke-width="1.0"><animate attributeName="opacity" values="0.25;0.55;0.25" dur="2.3s" repeatCount="indefinite"/></line>
+      <line x1="255" y1="88"  x2="140" y2="72"  stroke="rgba(66,165,245,0.25)" stroke-width="1.0"><animate attributeName="opacity" values="0.25;0.55;0.25" dur="1.9s" repeatCount="indefinite"/></line>
+      <line x1="160" y1="125" x2="140" y2="72"  stroke="rgba(66,165,245,0.25)" stroke-width="1.0"><animate attributeName="opacity" values="0.25;0.55;0.25" dur="2.6s" repeatCount="indefinite"/></line>
+      <line x1="70"  y1="118" x2="140" y2="72"  stroke="rgba(239,83,80,0.25)"  stroke-width="1.0"><animate attributeName="opacity" values="0.25;0.55;0.25" dur="2.1s" repeatCount="indefinite"/></line>
+
+      <!-- Good data packets (blue) between good nodes -->
+      <circle r="3" fill="#42a5f5" opacity="0" filter="url(#p2p-blue-glow)">
+        <animateMotion dur="1.8s" repeatCount="indefinite" begin="0s"   path="M50,30 L140,72"/>
+        <animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite" begin="0s"/>
+      </circle>
+      <circle r="3" fill="#42a5f5" opacity="0" filter="url(#p2p-blue-glow)">
+        <animateMotion dur="2.0s" repeatCount="indefinite" begin="0.8s" path="M255,88 L140,72"/>
+        <animate attributeName="opacity" values="0;1;0" dur="2.0s" repeatCount="indefinite" begin="0.8s"/>
+      </circle>
+      <circle r="3" fill="#42a5f5" opacity="0" filter="url(#p2p-blue-glow)">
+        <animateMotion dur="1.7s" repeatCount="indefinite" begin="1.5s" path="M160,125 L140,72"/>
+        <animate attributeName="opacity" values="0;1;0" dur="1.7s" repeatCount="indefinite" begin="1.5s"/>
+      </circle>
+      <circle r="3" fill="#42a5f5" opacity="0" filter="url(#p2p-blue-glow)">
+        <animateMotion dur="2.1s" repeatCount="indefinite" begin="0.4s" path="M50,30 L200,28"/>
+        <animate attributeName="opacity" values="0;1;0" dur="2.1s" repeatCount="indefinite" begin="0.4s"/>
+      </circle>
+
+      <!-- Bad packets from Byzantine nodes (red, fade partway) -->
+      <circle r="3" fill="#ef5350" opacity="0" filter="url(#p2p-red-glow)">
+        <animateMotion dur="1.4s" repeatCount="indefinite" begin="0.6s" path="M200,28 L140,72"/>
+        <animate attributeName="opacity" values="0;0.85;0" dur="1.4s" repeatCount="indefinite" begin="0.6s"/>
+      </circle>
+      <circle r="3" fill="#ef5350" opacity="0" filter="url(#p2p-red-glow)">
+        <animateMotion dur="1.5s" repeatCount="indefinite" begin="1.8s" path="M70,118 L140,72"/>
+        <animate attributeName="opacity" values="0;0.85;0" dur="1.5s" repeatCount="indefinite" begin="1.8s"/>
+      </circle>
+
+      <!-- Adaptive filter checkmark at center (flashes after bad packet arrives) -->
+      <circle cx="140" cy="72" r="6" fill="#69f0ae" opacity="0" filter="url(#p2p-green-glow)">
+        <animate attributeName="opacity" values="0;0;0.9;0.9;0" dur="1.4s" repeatCount="indefinite" begin="1.9s"/>
+      </circle>
+      <circle cx="140" cy="72" r="6" fill="#69f0ae" opacity="0" filter="url(#p2p-green-glow)">
+        <animate attributeName="opacity" values="0;0;0.9;0.9;0" dur="1.5s" repeatCount="indefinite" begin="3.0s"/>
+      </circle>
+
+      <!-- Good nodes -->
+      <circle cx="50"  cy="30"  r="11" fill="rgba(66,165,245,0.15)" stroke="#42a5f5" stroke-width="1.4"/>
+      <circle cx="50"  cy="30"  r="5.5" fill="#42a5f5" filter="url(#p2p-blue-glow)"/>
+      <circle cx="255" cy="88"  r="11" fill="rgba(66,165,245,0.15)" stroke="#42a5f5" stroke-width="1.4"/>
+      <circle cx="255" cy="88"  r="5.5" fill="#42a5f5" filter="url(#p2p-blue-glow)"/>
+      <circle cx="160" cy="125" r="11" fill="rgba(66,165,245,0.15)" stroke="#42a5f5" stroke-width="1.4"/>
+      <circle cx="160" cy="125" r="5.5" fill="#42a5f5" filter="url(#p2p-blue-glow)"/>
+
+      <!-- Byzantine nodes (red pulsing) -->
+      <circle cx="200" cy="28"  r="13" fill="rgba(239,83,80,0.15)" stroke="#ef5350" stroke-width="1.5"><animate attributeName="r" values="13;15;13" dur="1.6s" repeatCount="indefinite"/></circle>
+      <circle cx="200" cy="28"  r="5.5" fill="#ef5350" filter="url(#p2p-red-glow)"/>
+      <circle cx="70"  cy="118" r="13" fill="rgba(239,83,80,0.15)" stroke="#ef5350" stroke-width="1.5"><animate attributeName="r" values="13;15;13" dur="1.9s" repeatCount="indefinite"/></circle>
+      <circle cx="70"  cy="118" r="5.5" fill="#ef5350" filter="url(#p2p-red-glow)"/>
+
+      <!-- Center aggregation node -->
+      <circle cx="140" cy="72" r="24" fill="rgba(25,118,210,0.08)" stroke="none"><animate attributeName="r" values="24;30;24" dur="2.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.2s" repeatCount="indefinite"/></circle>
+      <circle cx="140" cy="72" r="17" fill="rgba(25,118,210,0.28)" stroke="#42a5f5" stroke-width="2" filter="url(#p2p-blue-glow)"/>
+      <text x="131" y="75" fill="#e3f2fd" font-size="7.5" font-weight="bold" font-family="monospace">AGG</text>
+
+      <!-- Labels -->
+      <text x="26"  y="23"  fill="#90caf9" font-size="6.2" font-family="sans-serif">peer</text>
+      <text x="186" y="22"  fill="#ef9a9a" font-size="6.2" font-family="sans-serif">adversarial</text>
+      <text x="44"  y="113" fill="#ef9a9a" font-size="6.2" font-family="sans-serif">adversarial</text>
+
+      <!-- Award badge -->
+      <rect x="186" y="6" width="80" height="14" rx="4" fill="rgba(255,193,7,0.15)" stroke="rgba(255,193,7,0.5)" stroke-width="1"/>
+      <text x="226" y="16" fill="#ffd54f" font-size="6.5" font-family="sans-serif" text-anchor="middle">🏆 Best Paper DCAI 2024</text>
+
+      <text x="14"  y="136" fill="rgba(255,255,255,0.55)" font-size="8.5" font-family="sans-serif">Adaptive Aggregation — Byzantine-Resilient P2P</text>
+    </svg>
+    <div class="lp-project-card__body">
+      <span class="lp-project-card__tag">Distributed Learning · P2P · Resilience</span>
+      <div class="lp-project-card__title">Resilient Peer-to-Peer Learning via Adaptive Aggregation</div>
+      <p class="lp-project-card__desc">
+        Fully serverless federated learning where each node adaptively weights neighbor
+        updates by gradient similarity, filtering Byzantine poisoning without any
+        central coordinator. <strong>Best Paper Award — IEEE DCAI 2024.</strong>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<hr class="lp-divider">
+
+<!-- ═══════════════════════════════════════════
      NEWS / TIMELINE
 ════════════════════════════════════════════ -->
 <span class="lp-section-label">Latest Updates</span>
